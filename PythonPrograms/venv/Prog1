@@ -1,0 +1,32 @@
+message = 'Hello World'
+# replacing particular substring in a
+new_message = message.replace(message[6:],"universe");
+
+# lenght of the string
+print(len(message))
+# getting substring from 0th to 5th
+print(message[:6])
+# getting substring from 2nd to 5th
+print(message[2:6])
+# getting substring from 6th to end
+print(message[6:])
+# converting string to upper case
+print(message.upper())
+# converting string to lower case
+print(message.lower())
+# Count the repetation of character or string
+print(message.count('l'))
+print(new_message)
+
+
+print('---------------------------------------------------------------------------------------')
+# formatted string --> palce holders
+greeting = 'Hello'
+name = 'Souvik'
+message = '{}, {}. Welcome!'.format(greeting,name)
+print(message)
+# formatted string --> f string
+message = f'{greeting}, {name.upper()}. Welcome to F String'
+print(message)
+# get all the available fuctions we can use for a given data
+print(dir(message))
